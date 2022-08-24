@@ -1,0 +1,27 @@
+{
+  "name": "croct-app",
+  "version": "1.0.0",
+  "description": "Trabalho realizado com Kafka",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leodoima/croct-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leodoima/croct-app/issues"
+  },
+  "homepage": "https://github.com/leodoima/croct-app#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "kafkajs": "^2.2.0",
+    "nodemon": "^2.0.19"
+  }
+}
