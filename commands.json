@@ -1,6 +1,8 @@
 {
     "init-docker": "sudo docker compose up -d",
     "run-application": "npm start",
+    "consumer": "node ./src/services/consumer.js",
+    "producer": "node ./src/services/producer.js",
     "dependencies": {
         "docker": 0,
         "node": 1
