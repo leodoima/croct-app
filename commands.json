@@ -1,0 +1,8 @@
+{
+    "init-docker": "sudo docker compose up -d",
+    "run-application": "npm start",
+    "dependencies": {
+        "docker": 0,
+        "node": 1
+    }
+}

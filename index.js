@@ -5,7 +5,6 @@ import { Kafka, Partitioners } from "kafkajs";
 
 // Tratar rotas
 const app = express();
-
 app.use(express.json());
 
 
@@ -15,6 +14,8 @@ const kafka = new Kafka({
   clientId: "api",
   brokers: ["localhost:9092"],
 });
+
+
 
 // Criar producer para tratar input de endereços IP
 const producer = kafka.producer({
@@ -29,8 +30,8 @@ const admin = kafka.admin();
 
 
 const run = async () => {
-  await admin.connect();
 
+  await admin.connect();
   await admin.createTopics({
     validateOnly: true,
     waitForLeaders: false,
@@ -40,14 +41,7 @@ const run = async () => {
 
 
 
-  await producer.connect();
-
-  await producer.send({
-    topic: "test-topic",
-    messages: [{ value: "Hello San Francisco" }],
-  });
-
-  
+  await producer.connect();  
 
 
 
@@ -55,7 +49,11 @@ const run = async () => {
   app.post("/event/ip/", async (req, res) => {
     const { client_id, ip, timestamp } = req.body;
 
+
+
     console.log(`ID: ${client_id} - IP: ${ip} - ${timestamp}`);
+
+
 
     // Chamar micro serviço
     await producer.send({
@@ -68,6 +66,9 @@ const run = async () => {
         },
       ],
     });
+
+
+
 
     return res.json({ok: true});
   });
