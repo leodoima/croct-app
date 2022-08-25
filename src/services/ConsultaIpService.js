@@ -1,6 +1,6 @@
 import apiIp from "../config/apiIp.js";
 
-const ACCESS_KEY = "584b9a864a98b74707a60971efda7b8d";
+const ACCESS_KEY = "16b3c0169b7b0624f9a9cd4771b47d58";
 
 // Realizar a busca por endereços IP através da API: IP Stack
 async function ConsultaIpService(ip) {
