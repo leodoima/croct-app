@@ -82,7 +82,7 @@ $ http://localhost:3000/
 <br>
 <br>
 
-### Melhorias possíveis 🔨
+### Melhorias futuras 🔨
 
 - [x]  Utilizar ferramenta específica de streaming (pode ser: https://nodefluent.github.io/kafka-streams/)
 - [x]  Realizar busca de endereços apenas para um mesmo ID após 30 minutos
