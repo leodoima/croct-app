@@ -11,14 +11,17 @@ Vamos lá! 🚀
 <br>
 
 **Evento**
+
 Receber uma sequência de eventos de IP em um tópico utilizando Kafka
 <br>
 
 **Buscar localização**
+
 Tendo o registro mantido no tópico, devemos buscar a localização de tal IP utilizando a API da IPStack
 <br>
 
 **Registrar localização**
+
 Havendo obtido a localização de tal IP, devemos interpretar o retorno da API e disponibilizar as informações em um novo tópico Kafka
 <br>
 <br>
