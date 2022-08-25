@@ -18,11 +18,3 @@ app.get("/", (req, res) => {
 });
 
 app.listen("3333");
-
-
-/*
-    [ ] extrair rotas;
-    [ ] criar producer para insert via json
-    [ ] criar documentação
-    [ ] testar aplicação do zero 
-*/
