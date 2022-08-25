@@ -10,19 +10,30 @@ Vamos lá! 🚀
 # Missão Croct! 🟢
 <br>
 
+<p align="center">
+  <img alt="Topology" src="./assets/cover.png" />
+</p>
+
+<br>
+<br>
+
 **Evento**
 
 Receber uma sequência de eventos de IP em um tópico utilizando Kafka
 <br>
+<br>
+
 
 **Buscar localização**
 
 Tendo o registro mantido no tópico, devemos buscar a localização de tal IP utilizando a API da IPStack
 <br>
+<br>
 
 **Registrar localização**
 
 Havendo obtido a localização de tal IP, devemos interpretar o retorno da API e disponibilizar as informações em um novo tópico Kafka
+<br>
 <br>
 <br>
 
@@ -42,7 +53,7 @@ As seguintes ferramentas foram utilizadas para construção desta aplicação:
 
 ### Pré-requisitos
 
-Antes de começar será necessário ter instalado em sua máquina a ferramenta [Docker](http://docker.com). Com esta será possível criar uma imagem do projeto e executar todas as suas funções. Além deste precisaremos também do Node.js.
+Antes de começar será necessário ter instalado em sua máquina a ferramenta [Docker](http://docker.com). Com esta será possível criar uma imagem do projeto e executar todas as suas funções. Além deste precisaremos também do [Node.js](http://nodejs.org/).
 <br>
 <br>
 
