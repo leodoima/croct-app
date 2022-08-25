@@ -53,7 +53,7 @@ As seguintes ferramentas foram utilizadas para construção desta aplicação:
 
 ### Pré-requisitos
 
-Antes de começar será necessário ter instalado em sua máquina a ferramenta [Docker](http://docker.com). Com esta será possível criar uma imagem do projeto e executar todas as suas funções. Além deste precisaremos também do [Node.js](http://nodejs.org/).
+Antes de começar será necessário ter instalado em sua máquina a ferramenta [Docker](http://docker.com) e o Docker Compose. Com esta será possível criar uma imagem do projeto e executar todas as suas funções. Além deste precisaremos também do [Node.js](http://nodejs.org/).
 <br>
 <br>
 
