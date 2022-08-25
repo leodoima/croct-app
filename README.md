@@ -1,6 +1,6 @@
 # croct-app
 <br>
-Este desafio é proposto para utilização de Kafka em uma aplicação de controle de eventos utilizando IP do cliente
+Este desafio é proposto para criar um aplicativo de fluxo Kafka autônomo que traduz IPs em localizações geográficas usando a API gratuita do IPStack.
 <br>
 <br>
 Vamos lá! 🚀
@@ -86,3 +86,4 @@ $ http://localhost:3000/
 
 - [x]  Utilizar ferramenta específica de streaming (pode ser: https://nodefluent.github.io/kafka-streams/)
 - [x]  Realizar busca de endereços apenas para um mesmo ID após 30 minutos
+- [x]  Incluir testes automatizados
