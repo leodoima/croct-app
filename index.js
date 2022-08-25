@@ -14,7 +14,15 @@ app.post("/event/ip/", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  return res.json({ message: "Ok" });
+  return res.json({ message: "Olá! Estamos utilizando Kafka nesta aplicação!" });
 });
 
 app.listen("3333");
+
+
+/*
+    [ ] extrair rotas;
+    [ ] criar producer para insert via json
+    [ ] criar documentação
+    [ ] testar aplicação do zero 
+*/

@@ -13,14 +13,14 @@ const producer = kafka.producer({
   allowAutoTopicCreation: true,
 });
 
-// Gerar eventos constantes de entrada de IP
+// Gerar entrada de eventos constantes de entrada de IP
 const generatedEvent = async () => {
   const ip = randomIpv4();
   const timestamp = Date.now();
   const client_id = Math.floor(Math.random() * 10); // Gerando registro de 0 - 9
 
   await producer.send({
-    topic: "test-topic",
+    topic: "ip-request",
     messages: [
       { key: String(client_id), value: String(ip), timestamp: timestamp },
     ],
@@ -30,6 +30,8 @@ const generatedEvent = async () => {
 };
 
 const run = async () => {
+    
+  /*
   // Configurações administrativas do tópico
   const admin = kafka.admin();
   await admin.connect();
@@ -39,11 +41,12 @@ const run = async () => {
     timeout: 1,
     topics: [{ topic: "ip-request" }],
   });
+  */
 
   await producer.connect();
 
   // Acionar gerador de eventos
-  setInterval(generatedEvent, 1000);
+  setInterval(generatedEvent, 10000);
 };
 
 run().catch(console.error);
